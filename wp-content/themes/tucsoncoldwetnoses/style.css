@@ -8,7 +8,7 @@ Version: 0.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tucsoncoldwetnoses
-Tags: 
+Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -33,6 +33,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Accessibility
 # Alignments
 # Clearings
+# Header
 # Widgets
 # Content
 	## Posts and pages
@@ -91,6 +92,7 @@ template {
 
 a {
 	background-color: transparent;
+	text-decoration: none;
 }
 
 a:active,
@@ -265,9 +267,9 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
-	font-size: 16px;
+	color: #7b7b7b;
+	font-family: Tahoma, sans-serif;
+	font-size: 18px;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -279,6 +281,21 @@ h4,
 h5,
 h6 {
 	clear: both;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	margin-top: 1.7em;
+}
+
+h1 {
+	color: #6776BA;
+}
+
+h2 {
+	color: #08B5D6
+}
+
+h3 {
+	color: #90E191;
 }
 
 p {
@@ -506,21 +523,42 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.site-branding {
+	float: left;
+}
+
+#primary-menu {
+	float: right;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+
+#primary-menu li {
+	margin-left: 2em;
+	text-align: right;
+}
+
+#primary-menu a {
+	color: #414141;
+}
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #08B5D6;
+	transition: color .2s;
 }
 
 a:visited {
-	color: purple;
+	color: #5766A7;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #5766A7;
 }
 
 a:focus {
@@ -732,6 +770,14 @@ a:active {
 .site-content:after,
 .site-footer:after {
 	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+	background: #0DC8D8 url(./images/Animal_Rescue_Tucson.jpg);
+	background-size: cover;
 }
 
 /*--------------------------------------------------------------
