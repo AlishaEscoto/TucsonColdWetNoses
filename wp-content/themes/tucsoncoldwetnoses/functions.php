@@ -106,7 +106,10 @@ function tucsoncoldwetnoses_scripts() {
 	wp_enqueue_style( 'tucsoncoldwetnoses-style', get_stylesheet_uri() );
 
 	// Add Google Fonts Pacifico and Open Sans Condensed
-	wp_enqueue_style( 'tucsoncoldwetnoses-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Pacifico')
+	wp_enqueue_style( 'tucsoncoldwetnoses-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Pacifico');
+
+	// Add FontAwesome
+	wp_enqueue_script( 'tucsoncoldwetnoses-fontawesome', 'https://use.fontawesome.com/66c9b00922.js');
 
 	wp_enqueue_script( 'tucsoncoldwetnoses-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
