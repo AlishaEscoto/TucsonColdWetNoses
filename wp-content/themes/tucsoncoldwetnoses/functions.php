@@ -44,7 +44,8 @@ function tucsoncoldwetnoses_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'tucsoncoldwetnoses' ),
+		'primary' => esc_html__( 'Primary Menu', 'tucsoncoldwetnoses' ),
+		'footer' => esc_html__( 'Footer Menu', 'tucsoncoldwetnoses' ),
 	) );
 
 	/*
@@ -60,10 +61,10 @@ function tucsoncoldwetnoses_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'tucsoncoldwetnoses_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+	//add_theme_support( 'custom-background', apply_filters( //'tucsoncoldwetnoses_custom_background_args', array(
+	//	'default-color' => 'ffffff',
+	//	'default-image' => '',
+	//) ) );
 }
 endif;
 add_action( 'after_setup_theme', 'tucsoncoldwetnoses_setup' );
@@ -103,6 +104,9 @@ add_action( 'widgets_init', 'tucsoncoldwetnoses_widgets_init' );
  */
 function tucsoncoldwetnoses_scripts() {
 	wp_enqueue_style( 'tucsoncoldwetnoses-style', get_stylesheet_uri() );
+
+	// Add Google Fonts Pacifico and Open Sans Condensed
+	wp_enqueue_style( 'tucsoncoldwetnoses-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Pacifico')
 
 	wp_enqueue_script( 'tucsoncoldwetnoses-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
