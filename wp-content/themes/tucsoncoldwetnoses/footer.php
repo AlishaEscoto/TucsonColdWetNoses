@@ -14,11 +14,9 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'tucsoncoldwetnoses' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'tucsoncoldwetnoses' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'tucsoncoldwetnoses' ), 'tucsoncoldwetnoses', '<a href="https://www.alishaescoto.com" rel="designer">Alisha Escoto</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="container">
+			<p>&copy; Copyright 2016 Tucson Cold Wet Noses | Web Design by <a href="https://www.alishaescoto.com">Alisha Escoto</a></p>
+		</div><!-- .container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

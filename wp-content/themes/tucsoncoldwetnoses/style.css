@@ -371,6 +371,11 @@ body {
 	background: #fff; /* Fallback for when there is no custom background color defined. */
 }
 
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
 blockquote:before,
 blockquote:after,
 q:before,
