@@ -21,6 +21,12 @@
  * @uses tucsoncoldwetnoses_header_style()
  */
 function tucsoncoldwetnoses_custom_header_setup() {
+	add_theme_support( 'custom-logo', array(
+		'height' => 150,
+		'width' => 300,
+		'flex-width' => false,
+		'flex-height' => true,
+	) );
 	add_theme_support( 'custom-header', apply_filters( 'tucsoncoldwetnoses_custom_header_args', array(
 		'default-image'          => '/wp-content/themes/tucsoncoldwetnoses/images/Animal_Rescue_Tucson.jpg',
 		'default-text-color'     => '000000',

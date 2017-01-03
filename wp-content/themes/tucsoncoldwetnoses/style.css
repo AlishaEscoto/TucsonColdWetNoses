@@ -787,7 +787,7 @@ a:active {
 	background: #0DC8D8;
 	border-top: 7px solid #08B5D6;
 	background-size: cover;
-	padding-bottom: 2em;
+	padding: 2em 1em 3em;
 }
 
 .site-branding {

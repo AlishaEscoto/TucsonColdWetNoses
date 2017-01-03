@@ -24,11 +24,13 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tucsoncoldwetnoses' ); ?></a>
 
 <?php if ( get_header_image() ) { ?>
-	<header id="masthead" class="site-header" role="banner" style="background-image: url(<?php header_image(); ?>); background-size: cover;">
+	<header id="masthead" class="site-header" role="banner" style="background-image: url(<?php header_image(); ?>);">
 <?php } else { ?>
-	<header id="masthead" class="site-header" role="banner" style="background-image: url(./wp-content/themes/tucsoncoldwetnoses/images/Animal_Rescue_Tucson.jpg); background-size: cover;">
+	<header id="masthead" class="site-header" role="banner" style="background-image: url(./wp-content/themes/tucsoncoldwetnoses/images/Animal_Rescue_Tucson.jpg);">
 <?php } //End Header Image Check ?>
-
+<?php if ( has_custom_logo() ) {
+	the_custom_logo();
+} else { ?>
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
@@ -44,7 +46,7 @@
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
-
+<?php } ?> <!--End header if-->
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'tucsoncoldwetnoses' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
