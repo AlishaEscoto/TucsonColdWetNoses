@@ -523,37 +523,7 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-.site-branding {
-	float: left;
-}
 
-#primary-menu {
-	float: right;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: .2em;
-	margin-bottom: 1em;
-}
-
-#primary-menu li {
-	text-align: right;
-}
-
-#primary-menu ul>li a::before {
-	content: " | ";
-	margin-left: 8px;
-	position: relative;
-	top: -2px;
-	font-weight: normal;
-}
-
-#primary-menu li:first-of-type a::before {
-	content: "";
-}
-
-#primary-menu a {
-	color: #414141;
-}
 
 /*--------------------------------------------------------------
 ## Links
@@ -587,32 +557,52 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	margin-top: 3.3em;
+	float: right;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	margin-bottom: 1em;
+	position: relative;
 }
 
-.main-navigation ul {
+#primary-menu>ul {
 	display: none;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
 }
 
-.main-navigation li {
-	float: left;
-	position: relative;
+#primary-menu>li {
+	text-align: right;
+	display: inline-block;
 }
 
+#primary-menu>li::before {
+	content: " | ";
+	top: -2px;
+	font-weight: normal;
+}
+
+#primary-menu>li:first-of-type::before {content: "";}
+
 .main-navigation a {
-	display: block;
+	color: #414141;
+	display: inline-block;
 	text-decoration: none;
 }
 
 .main-navigation ul ul {
+	list-style: none;
+	padding: 0;
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: none;
+	letter-spacing: normal;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
+	background: rgba(255,255,255,.5);
+	border-radius: 5px;
+	color: #7b7b7b;
 	position: absolute;
 	top: 1.5em;
 	left: -999em;
@@ -626,18 +616,22 @@ a:active {
 
 .main-navigation ul ul a {
 	width: 200px;
+	font-size: .9em;
 }
 
 .main-navigation ul ul li {
-
+	text-align: left;
 }
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
+	color: #6776BA !important;
 }
 
 .main-navigation ul ul :hover > a,
 .main-navigation ul ul .focus > a {
+	background: #0DC8D8;
+	color: #fff !important;
 }
 
 .main-navigation ul ul a:hover,
@@ -790,15 +784,19 @@ a:active {
 --------------------------------------------------------------*/
 .site-header {
 	background: #0DC8D8 url(./images/Animal_Rescue_Tucson.jpg);
+	border-top: 7px solid #08B5D6;
 	background-size: cover;
+	padding-bottom: 2em;
 }
 
 .site-branding {
+	float: left;
 	padding-bottom: 1em;
 }
 
 .site-header h1 {
 	font-size: 1.6em;
+	margin-bottom: 0;
 }
 
 .site-description {
