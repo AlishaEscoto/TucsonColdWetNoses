@@ -532,11 +532,23 @@ textarea {
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: .2em;
+	margin-bottom: 1em;
 }
 
 #primary-menu li {
-	margin-left: 2em;
 	text-align: right;
+}
+
+#primary-menu ul>li a::before {
+	content: " | ";
+	margin-left: 8px;
+	position: relative;
+	top: -2px;
+	font-weight: normal;
+}
+
+#primary-menu li:first-of-type a::before {
+	content: "";
 }
 
 #primary-menu a {
