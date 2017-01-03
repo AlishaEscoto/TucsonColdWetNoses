@@ -589,7 +589,7 @@ a:active {
 }
 
 #primary-menu>li:last-of-type {
-	background: #5766A7;
+	background: #08B5D6;
 	padding: .2em 1em !important;
 	border-radius: 5px;
 	margin-left: .5em;
@@ -597,7 +597,7 @@ a:active {
 }
 
 #primary-menu>li:last-of-type:hover {
-	background: #0DC8D8;
+	background: #5766A7;
 }
 
 #primary-menu>li:last-of-type a {color: white;}
@@ -655,12 +655,12 @@ a:active {
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
-	color: #6776BA !important;
+	color: #08B5D6 !important;
 }
 
 .main-navigation ul ul :hover > a,
 .main-navigation ul ul .focus > a {
-	background: #0DC8D8;
+	background: #6776BA;
 	color: #fff!important;
 
 }
