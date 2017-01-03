@@ -581,6 +581,7 @@ a:active {
 #primary-menu>li::before {
 	content: " | ";
 	top: -2px;
+	position: relative;
 	font-weight: normal;
 }
 
@@ -783,7 +784,7 @@ a:active {
 # Header
 --------------------------------------------------------------*/
 .site-header {
-	background: #0DC8D8 url(./images/Animal_Rescue_Tucson.jpg);
+	background: #0DC8D8;
 	border-top: 7px solid #08B5D6;
 	background-size: cover;
 	padding-bottom: 2em;

@@ -23,7 +23,12 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tucsoncoldwetnoses' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+<?php if ( get_header_image() ) { ?>
+	<header id="masthead" class="site-header" role="banner" style="background-image: url(<?php header_image(); ?>); background-size: cover;">
+<?php } else { ?>
+	<header id="masthead" class="site-header" role="banner" style="background-image: url(./wp-content/themes/tucsoncoldwetnoses/images/Animal_Rescue_Tucson.jpg); background-size: cover;">
+<?php } //End Header Image Check ?>
+
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
