@@ -576,6 +576,7 @@ a:active {
 #primary-menu>li {
 	text-align: right;
 	display: inline-block;
+	padding-bottom: 1em;
 }
 
 #primary-menu>li::before {
@@ -587,6 +588,11 @@ a:active {
 
 #primary-menu>li:first-of-type::before {content: "";}
 
+#primary-menu ul>li>a {
+	padding: .5em 1em;;
+	border-radius: 5px;
+}
+
 .main-navigation a {
 	color: #414141;
 	display: inline-block;
@@ -595,19 +601,19 @@ a:active {
 
 .main-navigation ul ul {
 	list-style: none;
-	padding: 0;
-	font-size: 1em;
+	font-size: .7em;
 	font-weight: normal;
 	text-transform: none;
 	letter-spacing: normal;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	background: rgba(255,255,255,.5);
+	background: #fff;
 	border-radius: 5px;
 	color: #7b7b7b;
 	position: absolute;
-	top: 1.5em;
+	top: 2.5em;
 	left: -999em;
 	z-index: 99999;
+	padding: 1em;
 }
 
 .main-navigation ul ul ul {
@@ -616,8 +622,12 @@ a:active {
 }
 
 .main-navigation ul ul a {
-	width: 200px;
-	font-size: .9em;
+	width: 150px;
+	transition: background .2s, color .2s;
+}
+
+.main-navigation>ul>ul>li>a {
+	padding: 5px;
 }
 
 .main-navigation ul ul li {
@@ -632,7 +642,8 @@ a:active {
 .main-navigation ul ul :hover > a,
 .main-navigation ul ul .focus > a {
 	background: #0DC8D8;
-	color: #fff !important;
+	color: #fff!important;
+
 }
 
 .main-navigation ul ul a:hover,
