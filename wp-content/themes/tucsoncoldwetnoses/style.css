@@ -371,7 +371,23 @@ body {
 	background: #fff; /* Fallback for when there is no custom background color defined. */
 }
 
-.container {
+div#primary {
+	width: 70%;
+	float: left;
+}
+
+aside#secondary {
+	width: 28%;
+	float: right;
+	position: relative;
+	top: -7em;
+	background: #fff;
+	padding: 2.5em 1.5em;
+	border: 5px solid #5766A7;
+	border-radius: 10px;
+}
+
+#content.site-content, .container {
 	max-width: 960px;
 	margin: 0 auto;
 }
@@ -562,7 +578,7 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	margin-top: 3.3em;
+	margin-top: 1.7em;
 	float: right;
 	font-weight: bold;
 	text-transform: uppercase;
