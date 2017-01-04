@@ -22,8 +22,8 @@
  */
 function tucsoncoldwetnoses_custom_header_setup() {
 	add_theme_support( 'custom-logo', array(
-		'height' => 150,
-		'width' => 300,
+		'height' => 200,
+		'width' => 350,
 		'flex-width' => false,
 		'flex-height' => true,
 	) );

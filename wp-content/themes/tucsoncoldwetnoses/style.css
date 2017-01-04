@@ -383,12 +383,12 @@ div#primary.content-area {
 }
 
 aside#secondary {
-	width: 28%;
+	width: 26%;
 	float: right;
 	position: relative;
-	top: -7em;
+	top: -9em;
 	background: #fff;
-	padding: 2.5em 1.5em;
+	padding: 2.5em 1.6em;
 	border: 5px solid #5766A7;
 	border-radius: 10px;
 	margin-right: 1em;
@@ -428,7 +428,7 @@ aside#secondary ul li, aside#secondary ol li {
 .entry-meta, .entry-footer {font-size: .8em;}
 
 #content.site-content, .container {
-	max-width: 1200px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -894,7 +894,7 @@ a:active {
 	background: #0DC8D8;
 	border-top: 7px solid #08B5D6;
 	background-size: cover;
-	padding: 2em 1em 3em;
+	padding: 2em 1em;
 }
 
 .site-branding {
