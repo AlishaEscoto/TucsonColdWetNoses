@@ -425,6 +425,8 @@ aside#secondary ul li, aside#secondary ol li {
 		border: 0;
 	}
 
+	aside#secondary section:first-of-type h2.widget-title {margin-top: 0;}
+
 	#masthead>.container {text-align: center;}
 
 	#masthead #site-navigation button {margin: 0 auto;}
@@ -678,7 +680,7 @@ a:active {
 }
 
 #primary-menu>li:last-of-type {
-	background: #08B5D6;
+	background: #5766A7;
 	padding: .2em 1em !important;
 	border-radius: 5px;
 	margin-left: .5em;
@@ -686,7 +688,7 @@ a:active {
 }
 
 #primary-menu>li:last-of-type:hover {
-	background: #5766A7;
+	background: #0DC8D8;
 }
 
 #primary-menu>li:last-of-type a {color: white;}
@@ -904,7 +906,7 @@ a:active {
 --------------------------------------------------------------*/
 .site-header {
 	background: #0DC8D8;
-	border-top: 7px solid #08B5D6;
+	border-top: 7px solid #5766A7;
 	background-size: cover;
 	padding: 2em 1em;
 }

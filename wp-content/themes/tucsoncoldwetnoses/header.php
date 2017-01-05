@@ -26,7 +26,7 @@
 <?php if ( get_header_image() ) { ?>
 	<header id="masthead" class="site-header" role="banner" style="background-image: url(<?php header_image(); ?>);">
 <?php } else { ?>
-	<header id="masthead" class="site-header" role="banner" style="background-image: url(./wp-content/themes/tucsoncoldwetnoses/images/Animal_Rescue_Tucson.jpg);">
+	<header id="masthead" class="site-header" role="banner" style="background-image: url(./wp-content/themes/tucsoncoldwetnoses/images/Adoptable_Pets.jpg);">
 <?php } //End Header Image Check ?>
 <div class="container">
 	<?php if ( has_custom_logo() ) {
