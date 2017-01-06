@@ -517,7 +517,7 @@ input[type="submit"] {
 	border-radius: 3px;
 	background: #6776BA;
 	color: #fff;
-	font-size: 1em;
+	font-size: 1.1em;
 	line-height: 1;
 	padding: .6em 1em;
 	transition: background .2s;
@@ -1065,6 +1065,14 @@ a:active {
 .widget select {
 	max-width: 100%;
 }
+
+.widget form.search-form > label > input {
+	width: 115px;
+	position: relative;
+	top: 2px;
+}
+
+
 
 /*--------------------------------------------------------------
 # Content
