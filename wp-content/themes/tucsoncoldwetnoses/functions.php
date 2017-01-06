@@ -107,8 +107,7 @@ function tucsoncoldwetnoses_scripts() {
 
 	wp_enqueue_script( 'tucsoncoldwetnoses-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20151215', true );
 
-	wp_enqueue_script( 'tucsoncoldwetnoses-fontawesome', 'https://use.fontawesome.com/66c9b00922.js' );
-
+	wp_enqueue_script( 'tucsoncoldwetnoses-navigation', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20120206', true );
 	wp_localize_script( 'tucsoncoldwetnoses-navigation', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'tucsoncoldwetnoses' ) . '</span>',
 		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'tucsoncoldwetnoses' ) . '</span>',
