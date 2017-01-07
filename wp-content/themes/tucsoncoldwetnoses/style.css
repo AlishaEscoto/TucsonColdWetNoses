@@ -1283,10 +1283,10 @@ object {
 --------------------------------------------------------------*/
 footer.site-footer {
 	background: #666a8f;
-	color: white;
+	color: lightgray;
 	text-align: center;
 	padding: 5em 1em 2em;
-	font-size: .9em;
+	font-size: .7em;
 	clear: both;
 }
 
@@ -1296,23 +1296,35 @@ footer.site-footer a {
 
 footer.site-footer a:hover {color: #90E191;}
 
+#footer-nav {
+	padding-bottom: 1em !important;
+}
+
 #footer-nav a {
 	color: white;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: .2em;
-	font-size: .9em;
+	font-size: 1.2em;
 	margin: 0 .5em;
 	transition: color .2s;
 }
 
 #footer-nav a:hover {
 	text-decoration: none;
-	color: lightgray;
+	color: #0DC8D8;
+}
+
+#footer-nav::after {
+	content: "\f1b0";
+	font-family: FontAwesome;
+	color: #90E191;
+	font-size: 1.5em;
 }
 
 #footer-nav ul {
 	list-style: none;
+	padding-bottom: .5em;
 }
 
 #footer-nav ul li {
