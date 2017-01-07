@@ -391,10 +391,10 @@ aside#secondary {
 	width: 26%;
 	float: right;
 	position: relative;
-	top: -9em;
-	background: #fff;
+	top: -15em;
+	background: rgba(255,255,255,.9);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	padding: 2.5em 1.6em;
-	border: 5px solid #5766A7;
 	border-radius: 10px;
 	margin-right: 1em;
 	font-size: .8rem;
@@ -516,6 +516,7 @@ input[type="submit"] {
 	border: 0;
 	border-radius: 3px;
 	background: #6776BA;
+	border-radius: 5px;
 	color: #fff;
 	font-size: 1.1em;
 	line-height: 1;
@@ -528,6 +529,8 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
 	background: #5766A7;
+	outline: none;
+	text-decoration: none;
 }
 
 button:focus,
@@ -538,7 +541,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-
+	text-decoration: none;
 }
 
 input[type="text"],
@@ -654,7 +657,6 @@ a:active {
 	position: relative;
 	display: block;
 	padding: 0.8em 1em;
-	font-weight: 400;
 	text-decoration: none;
 	line-height: 1.6em;
 	color: white;
@@ -662,8 +664,9 @@ a:active {
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-	background: #5766A7;
+	background: #6776BA;
 	color: #fff;
+	outline: none;
 }
 
 .main-navigation a,
@@ -1273,11 +1276,16 @@ object {
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
 footer.site-footer {
 	background: #666a8f;
 	color: white;
 	text-align: center;
-	padding: 3em 1em;
+	padding: 5em 1em 2em;
 	font-size: .9em;
 	clear: both;
 }
@@ -1287,3 +1295,28 @@ footer.site-footer a {
 }
 
 footer.site-footer a:hover {color: #90E191;}
+
+#footer-nav a {
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .2em;
+	font-size: .9em;
+	margin: 0 .5em;
+	transition: color .2s;
+}
+
+#footer-nav a:hover {
+	text-decoration: none;
+	color: lightgray;
+}
+
+#footer-nav ul {
+	list-style: none;
+}
+
+#footer-nav ul li {
+	display: inline-block;
+}
+
+ul#menu-footer-menu {margin-left: 0 !important; padding-left: 0;}
