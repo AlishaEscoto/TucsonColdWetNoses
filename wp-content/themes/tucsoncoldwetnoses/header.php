@@ -53,14 +53,13 @@
 	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu' ) ); ?>
 </nav><!-- #site-navigation -->
 		</div><!-- .container -->
+		<?php if (is_home()) { ?>
+			<div id="cta">
+				<div class="container">
+					<h2>Super Exciting CTA</h2>
+					<p>This will be a widgetized call to action.</p>
+				</div>
+			</div>
+			<?php } ?>
 	</header><!-- #masthead -->
-
-<?php if (is_home()) { ?>
-	<div id="cta">
-		<div class="container">
-			<h2>Super Exciting CTA</h2>
-			<p>This will be a widgetized call to action.</p>
-		</div>
-	</div>
-	<?php } ?>
 	<div id="content" class="site-content">
