@@ -380,18 +380,15 @@ body {
 div#primary.content-area {
 	width: 70%;
 	float: left;
-}
-
-div#primary.content-area {
 	margin-bottom: 5em;
 	padding: 0 1em;
 }
 
 aside#secondary {
-	width: 26%;
-	float: right;
-	position: relative;
-	top: -15em;
+	max-width: 240px;
+	position: absolute;
+	left: 70%;
+	top: 15em;
 	background: rgba(255,255,255,.9);
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	padding: 2.5em 1.6em;
@@ -413,16 +410,17 @@ aside#secondary ul li, aside#secondary ol li {
 
 @media screen and (max-width: 825px) {
 	div#primary {
-		width: 100%;
+		width: 100% !important;
 		float: none;
 	}
 
 	aside#secondary {
 		width: 100%;
-		float: none;
+		max-width: 100%;
 		position: static;
 		padding: 2.5em 1em;
 		border: 0;
+		box-shadow: 0;
 	}
 
 	aside#secondary section:first-of-type h2.widget-title {margin-top: 0;}
@@ -1096,6 +1094,7 @@ a:active {
 #cta {
 	background: rgba(255,255,255,.7);
 	padding: 1em;
+
 }
 
 #cta h2, #cta p {
