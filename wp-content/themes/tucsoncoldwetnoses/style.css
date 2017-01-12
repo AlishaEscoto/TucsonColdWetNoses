@@ -876,19 +876,6 @@ a:active {
 
 	.main-navigation>div>ul {position: relative;}
 
-	.main-navigation>div>ul>li:last-of-type {
-		position: absolute;
-		top: 3.5em;
-		margin-left: -125px;
-		border-radius: 5px;
-		background: #6776BA;
-		transition: background .2s;
-	}
-
-	.main-navigation>div>ul>li:last-of-type:hover {
-		background: #5755A7;
-	}
-
 	/* Add an outline on hovered and focused menu items */
 	.main-navigation a:hover,
 	.main-navigation a:focus {
@@ -1091,15 +1078,9 @@ a:active {
 	}
 }
 
-#cta {
-	background: rgba(255,255,255,.7);
-	padding: 1em;
-
-}
-
-#cta h2, #cta p {
-	margin: 0;
-
+.n2-ss-align{
+     position: relative;
+     z-index: 0;
 }
 
 /*--------------------------------------------------------------
