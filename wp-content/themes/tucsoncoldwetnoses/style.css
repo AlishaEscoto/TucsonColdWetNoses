@@ -629,17 +629,16 @@ a:active {
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
-	margin-left: -15px !important;
 	display: block;
 	width: 100%;
 	font-weight: 300;
 	font-size: 1em;
+	position: relative;
+	top: 2.5em;
 }
 
 .main-navigation ul {
 	display: none;
-	list-style: none;
-	margin-left: 0;
 }
 
 .main-navigation li {
@@ -779,6 +778,47 @@ a:active {
 .menu-toggle:hover,
 .menu-toggle:focus {
 	text-decoration: underline;
+}
+
+.main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"], .main-navigation a[href^="https://www.facebook.com/"], .main-navigation a[href^="https://www.instagram.com/"] {
+	position: absolute;
+	top: -4em;
+	left: -10em;
+	background: #5766A7;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-radius: 5px;
+	transition: background .2s;
+}
+
+.main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"] {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"]:hover {
+	background: #0DC8D8;
+}
+
+.main-navigation a[href^="https://www.facebook.com/"] {
+	left: -13em;
+	padding-left: 1em;
+	padding-right: 1em;
+	background: transparent;
+}
+
+.main-navigation a[href^="https://www.facebook.com/"]:hover {
+	background: #08B5D6;
+}
+
+.main-navigation a[href^="https://www.instagram.com/"] {
+	left: -16em;
+	padding-left: 1em;
+	background: transparent;
+}
+
+.main-navigation a[href^="https://www.instagram.com/"]:hover {
+	background: #08B5D6;
 }
 
 @media screen and (min-width: 50em) {
