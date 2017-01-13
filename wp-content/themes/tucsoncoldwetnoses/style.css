@@ -782,7 +782,7 @@ a:active {
 
 .main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"], .main-navigation a[href^="https://www.facebook.com/"], .main-navigation a[href^="https://www.instagram.com/"] {
 	position: absolute;
-	top: -4em;
+	top: -5em;
 	left: -10em;
 	background: #5766A7;
 	padding-top: .5em;
