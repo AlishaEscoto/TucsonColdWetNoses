@@ -395,6 +395,7 @@ aside#secondary {
 	border-radius: 10px;
 	margin-right: 1em;
 	font-size: .8rem;
+	visibility: hidden;
 }
 
 aside#secondary ul, aside#secondary ol {
@@ -416,11 +417,13 @@ aside#secondary ul li, aside#secondary ol li {
 
 	aside#secondary {
 		width: 100%;
+		clear: both;
 		max-width: 100%;
 		position: static;
 		padding: 2.5em 1em;
 		border: 0;
 		box-shadow: 0;
+		overflow: auto;
 	}
 
 	aside#secondary section:first-of-type h2.widget-title {margin-top: 0;}
@@ -1082,7 +1085,7 @@ a:active {
 .site-header {
 	background: #0DC8D8;
 	border-top: 7px solid #5766A7;
-	background-size: cover;
+	background-attachment: fixed;
 }
 
 .site-branding {
