@@ -389,14 +389,17 @@ aside#secondary {
 	position: absolute;
 	left: 70%;
 	top: 15em;
-	background: rgba(255,255,255,1);
+	background: rgba(87,102,167,1);
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	padding: 0 .6em 2.5em 1em;
 	border-radius: 10px;
 	margin-right: 1em;
 	font-size: .8rem;
 	visibility: hidden;
+	color: white;
 }
+
+aside#secondary h2.widget-title {color: white;}
 
 aside#secondary ul, aside#secondary ol {
 	list-style: none;
@@ -787,7 +790,6 @@ a:active {
 	position: absolute;
 	top: -5em;
 	left: -10em;
-	background: #5766A7;
 	padding-top: .5em;
 	padding-bottom: .5em;
 	border-radius: 5px;
@@ -795,33 +797,31 @@ a:active {
 }
 
 .main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"] {
+	background: rgba(87,102,167,.6);
 	padding-left: 2em;
 	padding-right: 2em;
 }
 
 .main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"]:hover {
-	background: #0DC8D8;
+	background: rgba(87,102,167,1);
 }
 
 .main-navigation a[href^="https://www.facebook.com/"] {
 	left: -13em;
-	padding-left: 1em;
-	padding-right: 1em;
-	background: transparent;
+	background: rgba(16,224,242,.6);
 }
 
 .main-navigation a[href^="https://www.facebook.com/"]:hover {
-	background: #08B5D6;
+	background: rgba(16,224,242,1);
 }
 
 .main-navigation a[href^="https://www.instagram.com/"] {
-	left: -16em;
-	padding-left: 1em;
-	background: transparent;
+	left: -17.5em;
+	background: rgba(13,200,216,.6);
 }
 
 .main-navigation a[href^="https://www.instagram.com/"]:hover {
-	background: #08B5D6;
+	background: rgba(13,200,216,1);;
 }
 
 @media screen and (min-width: 50em) {
