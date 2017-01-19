@@ -1114,10 +1114,38 @@ a:active {
 	color: white;
 }
 
+#featured-image {
+	margin-left: -1em;
+	height: 200px;
+	width: calc(100% + 1em);
+	border-radius: 10px;
+	margin-top: 2em;
+	margin-bottom: -6.5em;
+}
+
+#featured-image div {
+	height: 100%;
+	width: 100%;
+	background: rgba(255,255,255,.5);
+}
+
 @media screen and (max-width: 825px) {
 	.site-branding {
 		float: none;
 		text-align: center;
+	}
+
+	#featured-image {
+		width: calc(100% + 2em);
+		height: 7em;
+		margin-top: 0;
+		border-radius: 0;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	#featured-image {
+		background-image: none !important;
 	}
 }
 

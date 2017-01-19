@@ -18,8 +18,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<?php
 			if (has_post_thumbnail()) { ?>
-			<div data-stellar-background-ratio=".7" style="margin-left: -1em; height: 200px; width: calc(100% + 1em); border-radius: 10px; background: url(<? the_post_thumbnail_url() ;?>); background-size: 110%; margin-top: 2em; margin-bottom: -6.5em; " id="featured-image">
-				<div style="height: 100%; width: 100%; background: rgba(255,255,255,.3);"></div>
+			<div data-stellar-background-ratio=".7" style="background: url(<? the_post_thumbnail_url() ;?>); background-size: 110%;" id="featured-image">
+				<div></div>
 			</div>
 			<?php }
 			?>
