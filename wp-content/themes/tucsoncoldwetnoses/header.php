@@ -18,7 +18,6 @@
 
 
 <?php wp_head(); ?>
-<script>jQuery(window).stellar();</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -26,9 +25,9 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tucsoncoldwetnoses' ); ?></a>
 
 <?php if ( get_header_image() ) { ?>
-	<header id="masthead" class="site-header" data-stellar-background-ratio=".2" role="banner" style="background-attachment: fixed; background-image: url(<?php header_image(); ?>);">
+	<header id="masthead" class="site-header" role="banner" style="background-image: url(<?php header_image(); ?>);">
 <?php } else { ?>
-	<header data-stellar-background-ratio=".2" id="masthead" class="site-header" role="banner" style="background-attachment: fixed; background-image: url(/wp-content/themes/tucsoncoldwetnoses/images/Adoptable_Pets.jpg);">
+	<header id="masthead" class="site-header" role="banner" style="background-image: url(/wp-content/themes/tucsoncoldwetnoses/images/Adoptable_Pets.jpg);">
 <?php } //End Header Image Check ?>
 <div class="container">
 	<?php if ( has_custom_logo() ) {
