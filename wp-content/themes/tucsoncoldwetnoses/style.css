@@ -648,11 +648,11 @@ a:active {
 	width: 100%;
 	font-weight: 300;
 	font-size: 1em;
-	position: relative;
-	top: 2.5em;
+	margin-top: 2.5em !important;
 }
 
 .main-navigation ul {
+	position: relative;
 	display: none;
 }
 
@@ -768,7 +768,7 @@ a:active {
 
 .menu-toggle {
 	position: fixed;
-	z-index: 100;
+	z-index: 1000;
 	bottom: 1em;
 	left: 1em;
 	font-size: 1em;
@@ -858,12 +858,23 @@ a:active {
 }
 
 .main-navigation.toggled ul {
+	list-style: none;
+	margin-left: 0;
 	max-height: calc(100vh - 8em);
 	overflow-y: auto;
 }
 
 .main-navigation.toggled ul ul {
+	padding-left: 0 !important;
+	font-size: .8em;
 	display: none;
+}
+
+.main-navigation.toggled ul ul li a::before {
+	content: "\f1b0 ";
+	font-family: FontAwesome;
+	color: #6776BA;
+	margin-right: 1em;
 }
 
 .main-navigation.toggled ul ul.toggled-on,
