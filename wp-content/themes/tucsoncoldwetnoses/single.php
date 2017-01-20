@@ -11,7 +11,13 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<?php the_post_thumbnail(); ?>
+			<?php
+			if (has_post_thumbnail()) { ?>
+			<div data-stellar-background-ratio=".7" style="background: url(<? the_post_thumbnail_url() ;?>); background-size: 115%;" id="featured-image">
+				<div></div>
+			</div>
+			<?php }
+			?>
 				<?php
 				while ( have_posts() ) : the_post();
 

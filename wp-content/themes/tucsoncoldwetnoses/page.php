@@ -18,7 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<?php
 			if (has_post_thumbnail()) { ?>
-			<div data-stellar-background-ratio=".7" style="background: url(<? the_post_thumbnail_url() ;?>); background-size: 110%;" id="featured-image">
+			<div data-stellar-background-ratio=".7" style="background: url(<? the_post_thumbnail_url() ;?>); background-size: 115%;" id="featured-image">
 				<div></div>
 			</div>
 			<?php }

@@ -389,14 +389,23 @@ aside#secondary {
 	position: absolute;
 	left: 70%;
 	top: 15em;
-	background: rgba(87,102,167,1);
+	background:  url(/wp-content/themes/tucsoncoldwetnoses/images/Adoptable_Pets.jpg);
+	background-size: cover;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	padding: 0 .6em 2.5em 1em;
 	border-radius: 10px;
 	margin-right: 1em;
 	font-size: .8rem;
 	visibility: hidden;
 	color: white;
+	overflow: hidden;
+}
+
+aside#secondary>div {
+	padding: 0 .6em 2.5em 1em;
+	height: 100%;
+	width: 100%;
+	background: rgba(87,102,167,.5);
+	overflow: auto;
 }
 
 aside#secondary h2.widget-title {color: white;}
@@ -1126,7 +1135,7 @@ a:active {
 #featured-image div {
 	height: 100%;
 	width: 100%;
-	background: rgba(255,255,255,.5);
+	background: rgba(255,255,255,.4);
 }
 
 @media screen and (max-width: 825px) {
