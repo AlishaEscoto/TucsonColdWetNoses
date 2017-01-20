@@ -101,8 +101,20 @@ add_action( 'widgets_init', 'tucsoncoldwetnoses_widgets_init' );
 function tucsoncoldwetnoses_scripts() {
 	wp_enqueue_style( 'tucsoncoldwetnoses-style', get_stylesheet_uri() );
 
+	/*Add Adobe Typekit
+	wp_enqueue_script( 'tucsoncoldwetnoses-typekit', 'https://use.typekit.net/dzd3dcz.js');
+
+	function theme_typekit_inline() {
+		if ( wp_script_is( 'tucsoncoldwetnoses-typekit', 'done' ) ) { ?>
+			<script type="text/javascript">try{Typekit.load();}catch(e)
+			{}</script>
+			<?php }
+		}
+		add_action( 'wp_head', 'theme_typekit_inline' );
+		*/
+
 	// Add Google Fonts Pacifico and Open Sans Condensed
-	wp_enqueue_style( 'tucsoncoldwetnoses-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i|Pacifico' );
+	wp_enqueue_style( 'tucsoncoldwetnoses-google-fonts', 'https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Open+Sans' );
 
 	// Add FontAwesome
 
