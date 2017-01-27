@@ -4,7 +4,7 @@ Theme URI: https://github.com/AlishaEscoto/TucsonColdWetNoses
 Author: Alisha Escoto
 Author URI: https://www.alishaescoto.com
 Description: Theme built for Tucson Cold Wet Noses animal rescue
-Version: 0.0.2
+Version: 0.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tucsoncoldwetnoses
@@ -38,6 +38,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Content
 	## Posts and pages
 	## Comments
+# Forms
 # Infinite scroll
 # Media
 	## Captions
@@ -385,8 +386,7 @@ div#primary.content-area {
 }
 
 aside#secondary {
-	max-width: 300px;
-	height: 600px;
+	min-width: 300px;
 	position: absolute;
 	left: 70%;
 	top: 15em;
@@ -400,6 +400,10 @@ aside#secondary {
 	overflow: hidden;
 }
 
+aside#secondary section {
+	clear: both;
+}
+
 aside#secondary>div {
 	padding: 0 .6em 2.5em 1em;
 	height: 100%;
@@ -408,7 +412,7 @@ aside#secondary>div {
 	overflow: auto;
 }
 
-aside#secondary h2.widget-title {color: white;}
+aside#secondary h2.widget-title, aside#secondary h2.widget-title a {color: white;}
 
 aside#secondary ul, aside#secondary ol {
 	list-style: none;
@@ -457,6 +461,11 @@ aside#secondary ul li, aside#secondary ol li {
 #content.site-content, .container {
 	max-width: 960px;
 	margin: 0 auto;
+}
+
+#content.site-content {
+	min-height: 742px;
+	overflow: hidden;
 }
 
 blockquote:before,
@@ -813,6 +822,7 @@ a:active {
 
 .main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"]:hover {
 	background: rgba(87,102,167,1);
+	color: white;
 }
 
 .main-navigation a[href^="https://www.facebook.com/"] {
@@ -821,6 +831,7 @@ a:active {
 }
 
 .main-navigation a[href^="https://www.facebook.com/"]:hover {
+	color: white;
 	background: rgba(16,224,242,1);
 }
 
@@ -830,7 +841,8 @@ a:active {
 }
 
 .main-navigation a[href^="https://www.instagram.com/"]:hover {
-	background: rgba(13,200,216,1);;
+	background: rgba(13,200,216,1);
+	color: white;
 }
 
 @media screen and (min-width: 50em) {
@@ -939,11 +951,10 @@ a:active {
 
 	.main-navigation>div>ul {position: relative;}
 
-	/* Add an outline on hovered and focused menu items */
-	.main-navigation a:hover,
-	.main-navigation a:focus {
+	.main-navigation>div>ul>li>a:hover,
+	.main-navigation>div>ul>li>a:focus {
 		background: transparent;
-		color: #fff;
+		color: #5766A7;
 	}
 
 	.main-navigation li ul {
@@ -1239,6 +1250,32 @@ a:active {
 .bypostauthor {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+ input[type=text], textarea, input[type=email], input[type=tel], input[type=url], input[type=number], input[type=password], select {
+	background-color: #f6f6f6;
+	padding: .5em 0;
+	height: 2.5em;
+}
+
+ input[type=text]:focus, textarea:focus, input[type=email]:focus, input[type=tel]:focus, input[type=url]:focus, input[type=number]:focus, input[type=password]:focus, select:focus {
+	 background-color: #fff;
+ }
+
+ input:focus, input[type=text]:focus, textarea:focus, input[type=email]:focus, input[type=tel]:focus, input[type=url]:focus, input[type=number]:focus, input[type=password]:focus, select:focus, input[type=submit]:focus, input[type=button]:focus {
+	 outline: #08B5D6 auto 5px !important;
+	 outline-offset: -2px;
+ }
+
+ .gform_next_button.button, input[type=submit], input[type=submit].gform_button.button {
+	 background-color: #08B5D6 !important;
+ }
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+	 margin-top: 0 !important;
+ }
 
 /*--------------------------------------------------------------
 # Infinite scroll
