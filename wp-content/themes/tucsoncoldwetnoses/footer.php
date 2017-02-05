@@ -33,7 +33,8 @@
             jQuery('#status').fadeOut(); // will first fade out the loading animation
             jQuery('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
             jQuery('body').delay(350).css({'overflow':'visible'});
-						sr.reveal('aside#secondary', {delay: 1000});
+						sr.reveal('aside#secondary', {origin: 'right', scale: 1, delay: 70, mobile: false, useDelay: 'onload', distance: '40%'});
+						sr.reveal('.reveal', {delay: 650, mobile: false, useDelay: 'onload', origin: 'top'}, 50);
           })
     //]]>
 </script><!-- End Preloader -->
