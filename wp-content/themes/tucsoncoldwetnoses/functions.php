@@ -121,9 +121,9 @@ function tucsoncoldwetnoses_scripts() {
 	wp_enqueue_script( 'tucsoncoldwetnoses-fontawesome', 'https://use.fontawesome.com/66c9b00922.js');
 
 	// Add ScrollReveal
-	wp_enqueue_script( 'tucsoncoldwetnoses-scrollreveal', 'https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js', array(  ), null, true);
+	wp_enqueue_script( 'tucsoncoldwetnoses-scrollreveal', 'https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js', array( 'jquery' ), null, true);
 
-	wp_enqueue_script( 'tucsoncoldwetnoses-stellar', get_template_directory_uri() . '/js/jquery.stellar.min.js', array(  ), null, true);
+	wp_enqueue_script( 'tucsoncoldwetnoses-stellar', get_template_directory_uri() . '/js/jquery.stellar.min.js', array( 'jquery' ), null, true);
 
 	wp_enqueue_script( 'tusoncoldwetnoses-myscripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), null, true);
 
