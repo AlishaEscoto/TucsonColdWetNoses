@@ -21,6 +21,10 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div><!-- Preloader -->
 <?php include_once("analyticstracking.php") ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tucsoncoldwetnoses' ); ?></a>

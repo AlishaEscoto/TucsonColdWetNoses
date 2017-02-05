@@ -24,6 +24,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
+# Preloader
 # Typography
 # Elements
 # Forms
@@ -261,6 +262,35 @@ th {
 	padding: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff;
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:100px;
+    height:100px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(./images/status.gif);
+    background-repeat:no-repeat;
+		background-size: contain;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -426,6 +456,11 @@ aside#secondary ul li, aside#secondary ol li {
 }
 
 @media screen and (max-width: 825px) {
+	aside#secondary>div {
+		background: transparent;
+		margin: 0 auto;
+	}
+
 	div#primary {
 		width: 100% !important;
 		float: none;
@@ -1100,6 +1135,8 @@ a:active {
 	display: table;
 	table-layout: fixed;
 }
+
+data-sr { visibility: hidden; }
 
 .clear:after,
 .entry-content:after,
