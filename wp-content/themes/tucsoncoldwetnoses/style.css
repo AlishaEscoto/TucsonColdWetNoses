@@ -271,25 +271,22 @@ body {
 --------------------------------------------------------------*/
 #preloader {
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:#fff;
-    z-index:99; /* makes sure it stays on top */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99; /* makes sure it stays on top */
 }
 
 #status {
-    width:100px;
-    height:100px;
-    position:absolute;
-    left:50%; /* centers the loading animation horizontally one the screen */
-    top:50%; /* centers the loading animation vertically one the screen */
-    background-image:url(./images/status.gif);
-    background-repeat:no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: #fff url(./images/sketched.gif) no-repeat center;
 		background-size: contain;
-    background-position:center;
-    margin:-100px 0 0 -100px; /* is width and height divided by two */
+		left: calc(50% - 100px);
+		top: calc(50% - 100px);
 }
 /*--------------------------------------------------------------
 # Typography
@@ -313,9 +310,9 @@ h4,
 h5,
 h6 {
 	clear: both;
-	text-transform: uppercase;
 	letter-spacing: .2em;
 	margin-top: 1.7em;
+	font-family: 'Covered By Your Grace';
 }
 
 h1 {
