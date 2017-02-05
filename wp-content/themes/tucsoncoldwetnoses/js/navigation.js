@@ -110,7 +110,7 @@
 	// Hide/show toggle button on scroll
 
 	var position, direction, previous;
-
+/*
 	$(window).scroll(function(){
 		if( $(this).scrollTop() >= position ){
 			direction = 'down';
@@ -128,7 +128,7 @@
 			}
 		}
 		position = $(this).scrollTop();
-	});
+	});*/
 
 	// Wrap centered images in a new figure element
 	$( 'img.aligncenter' ).wrap( '<figure class="centered-image"></figure>');
