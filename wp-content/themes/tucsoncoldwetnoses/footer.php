@@ -26,7 +26,7 @@
 
 <?php wp_footer(); ?>
 
-<!-- jQuery Plugin -->
+<!-- jQuery Plugin-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
 <!-- Preloader -->
