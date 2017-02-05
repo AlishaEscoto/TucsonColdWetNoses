@@ -1169,11 +1169,24 @@ data-sr { visibility: hidden; }
 
 .site-header>.container {padding: 2em 0}
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 100px) {
 	.custom-logo-link img {max-width: 290px;}
+
+	.custom-logo-link img {
+		margin-bottom: -2.5em;
 }
 
-@media screen and (min-width: 940px) { .custom-logo-link img {max-width: 400px;}
+@media screen and (min-width: 800px) {
+	.custom-logo-link img {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 940px) {
+	.custom-logo-link img {
+		max-width: 400px;
+	}
+
 }
 
 .site-description {
