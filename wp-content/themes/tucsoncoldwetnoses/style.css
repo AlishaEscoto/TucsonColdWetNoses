@@ -280,13 +280,13 @@ body {
 }
 
 #status {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    background: #fff url(./images/sketched.gif) no-repeat center;
+    background: #fff url(./images/status.gif) no-repeat center;
 		background-size: contain;
-		left: calc(50% - 100px);
-		top: calc(50% - 100px);
+		left: calc(50% - 50px);
+		top: calc(50% - 50px);
 }
 /*--------------------------------------------------------------
 # Typography
