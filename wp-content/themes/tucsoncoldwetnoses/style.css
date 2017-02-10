@@ -4,7 +4,7 @@ Theme URI: https://github.com/AlishaEscoto/TucsonColdWetNoses
 Author: Alisha Escoto
 Author URI: https://www.alishaescoto.com
 Description: Theme built for Tucson Cold Wet Noses animal rescue
-Version: 0.2.6
+Version: 0.2.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tucsoncoldwetnoses
@@ -44,6 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Footer Widgets
 # Footer
 --------------------------------------------------------------*/
 
@@ -1436,6 +1437,37 @@ object {
 ## Galleries
 --------------------------------------------------------------*/
 
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+#footer_widgets section {
+	width: calc(100% / 3);
+	float: left;
+	text-align: center;
+	margin-bottom: 5em;
+	padding: 0 1em;
+}
+
+#footer_widgets .widget-title {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#08b5d6+0,7db9e8+100&1+0,0+100 */
+	background: -moz-linear-gradient(top,  rgba(8,181,214,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(8,181,214,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(8,181,214,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08b5d6', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+	padding: 1em;
+	color: #5766A7;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#footer_widgets {font-size: .9em;}
+
+@media screen and (max-width: 826px) {
+	#footer_widgets {
+		display: none;
+	}
+}
 
 /*--------------------------------------------------------------
 ## Footer

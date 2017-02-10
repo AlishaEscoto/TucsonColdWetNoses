@@ -12,7 +12,11 @@
 ?>
 
 	</div><!-- #content -->
-
+	<div class="container" id="footer_widgets">
+		<?php dynamic_sidebar( 'footer-1' ); ?>
+		<?php dynamic_sidebar( 'footer-2' ); ?>
+		<?php dynamic_sidebar( 'footer-3' ); ?>
+	</div>
 	<footer id="colophon" class="site-footer clear" role="contentinfo">
 		<div class="container">
 			<nav id="footer-nav" role="navigation">
