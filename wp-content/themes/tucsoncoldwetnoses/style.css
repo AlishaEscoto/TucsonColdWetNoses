@@ -775,7 +775,7 @@ a:active {
 	box-sizing: content-box;
 	padding: 0;
 	font-family: 'FontAwesome';
-	background-color: #6776BA;
+	background-color: rgba(16,224,242,.7) !important;
 	border: 0;
 	content: "";
 	color: #000;
@@ -838,14 +838,15 @@ a:active {
 	text-decoration: underline;
 }
 
-.main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"], .main-navigation a[href^="https://www.facebook.com/"], .main-navigation a[href^="https://www.instagram.com/"] {
+.main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"], .main-navigation a[href^="https://www.facebook.com/"] {
 	position: absolute;
+	font-size: 1.1em;
 	top: -4.5em;
 	left: -11em;
 	padding-top: .5em;
 	padding-bottom: .5em;
 	border-radius: 5px;
-	transition: background .2s;
+	transition: background .2s, color .2s;
 }
 
 .main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"] {
@@ -863,21 +864,11 @@ a:active {
 
 .main-navigation a[href^="https://www.facebook.com/"] {
 	left: -14em;
-	background: rgba(16,224,242,.6);
+	color: #08B5D6;
+	background: transparent;
 }
 
 .main-navigation a[href^="https://www.facebook.com/"]:hover {
-	color: white;
-	background: rgba(16,224,242,1);
-}
-
-.main-navigation a[href^="https://www.instagram.com/"] {
-	left: -17.3em;
-	background: rgba(13,200,216,.6);
-}
-
-.main-navigation a[href^="https://www.instagram.com/"]:hover {
-	background: rgba(13,200,216,1);
 	color: white;
 }
 
@@ -1439,7 +1430,7 @@ object {
 
 
 /*--------------------------------------------------------------
-## Footer
+## Footer Widgets
 --------------------------------------------------------------*/
 #footer_widgets section {
 	width: calc(100% / 3);
@@ -1481,6 +1472,27 @@ footer.site-footer {
 	clear: both;
 }
 
+footer.site-footer a[href^="https://www.facebook.com/"] {
+	display: inline-block;
+	overflow: hidden;
+	text-indent: -9999px;
+	color: #90E191;
+}
+
+footer.site-footer a[href^="https://www.facebook.com/"]:hover {
+	color: white;
+}
+
+footer.site-footer a[href^="https://www.facebook.com/"]::before {
+	content: "\f09a";
+	font-family: FontAwesome;
+
+	float: left;
+	font-size: 18px;
+	margin: 0;
+	text-indent: 0;
+}
+
 footer.site-footer a {
 	color: #0DC8D8;
 }
@@ -1504,13 +1516,6 @@ footer.site-footer a:hover {color: #90E191;}
 #footer-nav a:hover {
 	text-decoration: none;
 	color: #0DC8D8;
-}
-
-#footer-nav::after {
-	content: "\f1b0";
-	font-family: FontAwesome;
-	color: #90E191;
-	font-size: 1.5em;
 }
 
 #footer-nav ul {

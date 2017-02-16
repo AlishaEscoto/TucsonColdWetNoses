@@ -23,6 +23,8 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
 			</nav><!-- #site-navigation -->
 
+			<p><a href="https://www.facebook.com/TucsonColdWetNoses" target="_blank">Facebook</a></p>
+
 			<p>&copy; Copyright 2016 Tucson Cold Wet Noses | Web Design by <a href="https://www.alishaescoto.com">Alisha Escoto</a></p>
 		</div><!-- .container -->
 	</footer><!-- #colophon -->
