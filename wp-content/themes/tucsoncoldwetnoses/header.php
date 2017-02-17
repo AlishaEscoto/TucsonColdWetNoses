@@ -65,5 +65,9 @@
 	<?php
 echo do_shortcode('[smartslider3 slider=3]');
 	?>
+  <div id="CTA" class="container">
+    <a href="/become-a-foster-parent/"><img src="/tcwn/wp-content/themes/tucsoncoldwetnoses/images/Foster-a-Pet.png"></a>
+    <a href="/adoptable-pets/"><img src="/tcwn/wp-content/themes/tucsoncoldwetnoses/images/Adopt-a-pet.png"></a>
+  </div>
 	<?php } ?>
 	<div id="content" class="site-content">
