@@ -66,8 +66,8 @@
 echo do_shortcode('[smartslider3 slider=3]');
 	?>
   <div id="CTA" class="container">
-    <a href="/become-a-foster-parent/"><img src="/tcwn/wp-content/themes/tucsoncoldwetnoses/images/Foster-a-Pet.png"></a>
-    <a href="/adoptable-pets/"><img src="/tcwn/wp-content/themes/tucsoncoldwetnoses/images/Adopt-a-pet.png"></a>
+    <a href="/become-a-foster-parent/"><img class="cta-image" alt="Foster a Pet" title="Foster a Pet" src="/wp-content/themes/tucsoncoldwetnoses/images/Foster-a-Pet.png"></a>
+    <a href="/adoptable-pets/"><img class="cta-image" alt="Adopt a Pet" title="Adopt a Pet" src="/wp-content/themes/tucsoncoldwetnoses/images/Adopt-a-pet.png"></a>
   </div>
 	<?php } ?>
 	<div id="content" class="site-content">

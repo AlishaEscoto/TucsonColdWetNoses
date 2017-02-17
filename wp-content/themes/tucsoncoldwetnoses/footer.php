@@ -38,7 +38,9 @@
             jQuery('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
             jQuery('body').delay(350).css({'overflow':'visible'});
 						sr.reveal('aside#secondary', {origin: 'right', scale: 1, delay: 70, mobile: false, useDelay: 'onload', distance: '40%'});
-						sr.reveal('.reveal', {delay: 650, mobile: false, useDelay: 'onload', origin: 'top'}, 50);
+						sr.reveal('.donate-btn', {delay: 650, useDelay: 'onload', origin: 'top'}, 50);
+						sr.reveal('img.cta-image[alt~=Foster]', {distance: '100px', scale: 1, origin: "left", delay: 650, useDelay: 'onload', viewFactor: 0.4, reset: true,});
+						sr.reveal('.cta-image[title~=Adopt]', {distance: '100px', scale: 1, origin: "right", delay: 700, useDelay: 'onload', viewFactor: 0.5, reset: true,});
           })
     //]]>
 </script><!-- End Preloader -->
