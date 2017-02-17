@@ -51,6 +51,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+@font-face {
+    font-family: "Cry Kitty";
+    src: url(/wp-content/themes/tucsoncoldwetnoses/fonts/crykitty.ttf) format("truetype");
+}
+
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
@@ -423,7 +428,6 @@ aside#secondary {
 	background-position: right;
 	border-radius: 10px;
 	font-size: .8rem;
-	visibility: hidden;
 	color: white;
 	overflow: hidden;
 }
@@ -840,21 +844,21 @@ a:active {
 
 .main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"], .main-navigation a[href^="https://www.facebook.com/"] {
 	position: absolute;
-	font-size: 1.1em;
-	top: -4.5em;
-	left: -11em;
-	padding-top: .5em;
-	padding-bottom: .5em;
 	border-radius: 5px;
 	transition: background .2s, color .2s;
 }
 
 .main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"] {
 	background: rgba(87,102,167,.6);
-	font-family: 'Covered By Your Grace';
+	font-size: .9em;
+	font-family: 'Cry Kitty';
+	top: -5.5em;
+	left: -13.5em;
 	text-transform: none;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-left: 1.7em;
+	padding-right: 1.7em;
+	padding-top: .9em;
+	padding-bottom: 0;
 }
 
 .main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"]:hover {
@@ -865,6 +869,11 @@ a:active {
 .main-navigation a[href^="https://www.facebook.com/"] {
 	left: -14em;
 	color: #08B5D6;
+	font-size: 1.5em;
+	top: -3.8em;
+	left: -10.5em;
+	padding-top: .5em;
+	padding-bottom: .5em;
 	background: transparent;
 }
 
