@@ -10,7 +10,7 @@
  */
 
 ?>
-
+<?php wp_footer(); ?>
 	</div><!-- #content -->
 	<div class="container" id="footer_widgets">
 		<?php dynamic_sidebar( 'footer-1' ); ?>
@@ -29,8 +29,6 @@
 		</div><!-- .container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
-<?php wp_footer(); ?>
 
 <!-- Preloader -->
 <script type="text/javascript">

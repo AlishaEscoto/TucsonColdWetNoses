@@ -4,7 +4,7 @@ Theme URI: https://github.com/AlishaEscoto/TucsonColdWetNoses
 Author: Alisha Escoto
 Author URI: https://www.alishaescoto.com
 Description: Theme built for Tucson Cold Wet Noses animal rescue
-Version: 0.2.8
+Version: 0.3.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tucsoncoldwetnoses
@@ -1473,7 +1473,6 @@ object {
 ## Footer
 --------------------------------------------------------------*/
 footer.site-footer {
-	background: #666a8f;
 	color: lightgray;
 	text-align: center;
 	padding: 5em 1em 2em;
