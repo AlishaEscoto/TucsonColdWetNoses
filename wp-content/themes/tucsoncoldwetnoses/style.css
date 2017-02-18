@@ -779,10 +779,10 @@ a:active {
 	box-sizing: content-box;
 	padding: 0;
 	font-family: 'FontAwesome';
-	background-color: rgba(8,181,214,.7) !important;
+	background-color: rgba(246,206,104, .6) !important;
 	border: 0;
 	content: "";
-	color: #000;
+	color: #fff;
 	text-transform: lowercase; /* Stop screen readers from reading the text as capital letters */
 }
 
@@ -799,7 +799,6 @@ a:active {
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
 	background-color: #08b5d6;
-	color: #000;
 	outline: none;
 }
 
@@ -849,7 +848,7 @@ a:active {
 }
 
 .main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"] {
-	background: rgba(87,102,167,.6);
+	background: rgba(246,206,96,1);
 	font-size: .9em;
 	font-family: 'Cry Kitty';
 	top: -5.5em;
