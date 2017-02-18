@@ -862,8 +862,8 @@ a:active {
 }
 
 .main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"]:hover {
-	background: rgba(87,102,167,1);
-	color: white;
+	color: rgba(87,102,167,1);
+	background: transparent;
 }
 
 .main-navigation a[href^="https://www.facebook.com/"] {
