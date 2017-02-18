@@ -34,6 +34,7 @@
 <?php } else { ?>
 	<header id="masthead" class="site-header" role="banner" style="background-image: url(/wp-content/themes/tucsoncoldwetnoses/images/Pet-rescue.jpg);">
 <?php } //End Header Image Check ?>
+<p id="home-btn"><a href="http://www.tucsoncoldwetnoses.com">Return to homepage</a></p>
 <div class="container">
 	<?php if ( has_custom_logo() ) {
 		the_custom_logo();
@@ -68,7 +69,7 @@ echo do_shortcode('[smartslider3 slider=3]');
   <div id="CTA" class="container">
     <a href="/become-a-foster-parent/"><img class="cta-image" alt="Foster a Pet" title="Foster a Pet" src="/wp-content/themes/tucsoncoldwetnoses/images/Foster-a-Pet.png"></a>
     <a href="/adoptable-pets/"><img class="cta-image" alt="Adopt a Pet" title="Adopt a Pet" src="/wp-content/themes/tucsoncoldwetnoses/images/Adopt-a-pet.png"></a>
-    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN" target="_blank" class="cta-image" alt="Donate"><img src="/wp-content/themes/tucsoncoldwetnoses/images/Donate.png"></a>
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN" target="_blank" class="cta-image" alt="Donate"><img src="/wp-content/themes/tucsoncoldwetnoses/images/donate.png"></a>
   </div>
 	<?php } ?>
 	<div id="content" class="site-content">
