@@ -1197,13 +1197,13 @@ data-sr { visibility: hidden; }
 	}
 
 	#CTA img:first-of-type {
-		padding-right: 1em;
+		padding-right: .5em;
 		padding-left: .5em;
 	}
 
 	#CTA img:last-of-type {
-		padding-right: .5;
-		padding-left: 1em;
+		padding-right: .5em;
+		padding-left: .5em;
 	}
 }
 
@@ -1214,6 +1214,16 @@ data-sr { visibility: hidden; }
 		width: 35%;
 		padding: 3em;
 		padding-bottom: 1em;
+	}
+
+	#CTA img:first-of-type {
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+
+	#CTA img:last-of-type {
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 }
 
@@ -1582,4 +1592,7 @@ footer.site-footer a:hover {color: #90E191;}
 	display: inline-block;
 }
 
-ul#menu-footer-menu {margin-left: 0 !important; padding-left: 0;}
+ul#menu-footer-menu {
+	margin-left: 0 !important;
+	padding-left: 0;
+}
