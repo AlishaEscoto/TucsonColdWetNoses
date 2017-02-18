@@ -861,13 +861,13 @@ a:active {
 }
 
 .main-navigation a[href^="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT92J6FPX9GUN"]:hover {
-	color: rgba(87,102,167,1);
+	color: #f6ce68;
 	background: transparent;
 }
 
 .main-navigation a[href^="https://www.facebook.com/"] {
 	left: -14em;
-	color: #08B5D6;
+	color: #fff;
 	font-size: 1.5em;
 	top: -3.8em;
 	left: -10.5em;
@@ -877,7 +877,7 @@ a:active {
 }
 
 .main-navigation a[href^="https://www.facebook.com/"]:hover {
-	color: white;
+	color: #ffedc0;
 }
 
 @media screen and (min-width: 50em) {
@@ -1540,7 +1540,7 @@ footer.site-footer a[href^="https://www.facebook.com/"] {
 	display: inline-block;
 	overflow: hidden;
 	text-indent: -9999px;
-	color: #90E191;
+	color: #ffedc0;
 }
 
 footer.site-footer a[href^="https://www.facebook.com/"]:hover {
@@ -1550,7 +1550,6 @@ footer.site-footer a[href^="https://www.facebook.com/"]:hover {
 footer.site-footer a[href^="https://www.facebook.com/"]::before {
 	content: "\f09a";
 	font-family: FontAwesome;
-
 	float: left;
 	font-size: 18px;
 	margin: 0;
