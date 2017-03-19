@@ -62,7 +62,7 @@
 		</div><!-- .container -->
 
 	</header><!-- #masthead -->
-<?php if (is_home()) { ?>
+<?php if (is_front_page()) { ?>
 	<?php
 echo do_shortcode('[smartslider3 slider=3]');
 	?>
