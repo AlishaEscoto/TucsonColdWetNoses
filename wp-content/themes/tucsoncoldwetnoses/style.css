@@ -717,7 +717,7 @@ a:active {
 	padding: 0.8em 1em;
 	text-decoration: none;
 	line-height: 1.6em;
-	color: white;
+  color: #fff;
 }
 
 .main-navigation a:hover,
